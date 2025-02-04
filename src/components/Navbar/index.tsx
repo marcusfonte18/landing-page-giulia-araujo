@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Menu, X, Piano } from "lucide-react";
+import { Button } from "../ui/button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,9 +39,18 @@ const Navbar = () => {
             >
               Para Quem é
             </a>
-            <button className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors">
-              Aula Grátis
-            </button>
+            <Button
+              asChild
+              className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"
+            >
+              <a
+                href="https://wa.me/5521985536417"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Aula Grátis
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,9 +87,18 @@ const Navbar = () => {
               >
                 Para Quem é
               </a>
-              <button className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors w-full">
-                Aula Grátis
-              </button>
+              <Button
+                asChild
+                className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"
+              >
+                <a
+                  href="https://wa.me/5521985536417"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Aula Grátis
+                </a>
+              </Button>
             </div>
           </div>
         )}
