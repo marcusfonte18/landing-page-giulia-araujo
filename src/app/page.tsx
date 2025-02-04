@@ -11,7 +11,10 @@ const LandingPage = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       {/* Hero Section */}
-      <section className="relative min-h-screen pt-16 flex items-center justify-center bg-gradient-to-r from-purple-100 to-pink-100">
+      <section
+        id="inicio"
+        className="relative min-h-screen pt-16 flex items-center justify-center bg-gradient-to-r from-purple-100 to-pink-100"
+      >
         {" "}
         <div className="container mx-auto px-6 text-center">
           <Piano className="w-16 h-16 mx-auto mb-6 text-purple-600" />
