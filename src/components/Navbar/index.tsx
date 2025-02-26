@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { Menu, X, Piano } from "lucide-react";
 import { Button } from "../ui/button";
@@ -8,13 +7,13 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+    <nav className="fixed w-full bg-earthy-parchment/80 backdrop-blur-md z-50 shadow-sm">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Piano className="h-6 w-6 text-purple-600" />
-            <span className="text-lg font-semibold text-gray-800">
+            <Piano className="h-6 w-6 text-earthy-liver" />
+            <span className="text-lg font-semibold text-earthy-dark">
               Piano com Paixão
             </span>
           </div>
@@ -23,25 +22,25 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-8">
             <a
               href="#inicio"
-              className="text-gray-600 hover:text-purple-600 transition-colors"
+              className="text-earthy-bistre hover:text-earthy-liver transition-colors"
             >
               Início
             </a>
             <a
               href="#cursos"
-              className="text-gray-600 hover:text-purple-600 transition-colors"
+              className="text-earthy-bistre hover:text-earthy-liver transition-colors"
             >
               Cursos
             </a>
             <a
               href="#sobre"
-              className="text-gray-600 hover:text-purple-600 transition-colors"
+              className="text-earthy-bistre hover:text-earthy-liver transition-colors"
             >
               Para Quem é
             </a>
             <Button
               asChild
-              className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"
+              className="px-4 py-2 bg-earthy-liver text-earthy-parchment rounded-md hover:bg-earthy-copper transition-colors"
             >
               <a
                 href="https://wa.me/5521985536417"
@@ -55,7 +54,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-gray-600 hover:text-purple-600"
+            className="md:hidden p-2 text-earthy-bistre hover:text-earthy-liver"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X /> : <Menu />}
@@ -64,32 +63,32 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-4 border-t border-earthy-liver/20">
             <div className="flex flex-col gap-4">
               <a
                 href="#inicio"
-                className="text-gray-600 hover:text-purple-600 transition-colors"
+                className="text-earthy-bistre hover:text-earthy-liver transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Início
               </a>
               <a
                 href="#cursos"
-                className="text-gray-600 hover:text-purple-600 transition-colors"
+                className="text-earthy-bistre hover:text-earthy-liver transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Cursos
               </a>
               <a
                 href="#sobre"
-                className="text-gray-600 hover:text-purple-600 transition-colors"
+                className="text-earthy-bistre hover:text-earthy-liver transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Para Quem é
               </a>
               <Button
                 asChild
-                className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors"
+                className="px-4 py-2 bg-earthy-liver text-earthy-parchment rounded-md hover:bg-earthy-copper transition-colors"
               >
                 <a
                   href="https://wa.me/5521985536417"

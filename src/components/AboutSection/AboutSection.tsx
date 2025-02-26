@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section
       id="sobre"
-      className="py-20 bg-gradient-to-br from-purple-50 to-pink-50"
+      className="py-20 bg-gradient-to-br from-earthy-parchment to-earthy-copper/30"
     >
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -16,7 +16,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden">
                 {/* Placeholder para a foto da professora */}
-                <div className="aspect-[3/4] bg-purple-200 relative">
+                <div className="aspect-[3/4] bg-earthy-liver/20 relative">
                   <Image
                     src="/assets/giulia-araujo.webp"
                     className="object-cover"
@@ -29,12 +29,14 @@ const AboutSection = () => {
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
-                    <p className="text-3xl font-bold text-purple-600">10+</p>
-                    <p className="text-sm text-gray-600">Anos de Experiência</p>
+                    <p className="text-3xl font-bold text-earthy-liver">10+</p>
+                    <p className="text-sm text-earthy-bistre">
+                      Anos de Experiência
+                    </p>
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-purple-600">500+</p>
-                    <p className="text-sm text-gray-600">Alunos</p>
+                    <p className="text-3xl font-bold text-earthy-liver">500+</p>
+                    <p className="text-sm text-earthy-bistre">Alunos</p>
                   </div>
                 </div>
               </div>
@@ -44,11 +46,11 @@ const AboutSection = () => {
           {/* Conteúdo e Texto */}
           <div className="space-y-8">
             <div>
-              <h4 className="text-purple-600 font-medium mb-2">Sobre mim</h4>
-              <h2 className="text-4xl font-bold mb-6 text-gray-800">
+              <h4 className="text-earthy-liver font-medium mb-2">Sobre mim</h4>
+              <h2 className="text-4xl font-bold mb-6 text-earthy-dark">
                 Transformando sonhos em música
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <p className="text-earthy-bistre leading-relaxed mb-8">
                 Olá! Sou Giulia Araujo, professora de piano há mais de 10 anos.
                 Minha jornada na música começou ainda na infância, e desde então
                 venho dedicando minha vida a compartilhar essa paixão com
@@ -60,18 +62,20 @@ const AboutSection = () => {
 
             {/* Para quem é */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-gray-800">
+              <h3 className="text-2xl font-semibold text-earthy-dark">
                 Para quem são as aulas?
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex gap-4 items-start">
-                  <div className="p-3 bg-purple-100 rounded-lg">
-                    <Users className="w-6 h-6 text-purple-600" />
+                  <div className="p-3 bg-earthy-parchment rounded-lg">
+                    <Users className="w-6 h-6 text-earthy-liver" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Iniciantes</h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold mb-2 text-earthy-bistre">
+                      Iniciantes
+                    </h4>
+                    <p className="text-earthy-bistre">
                       Pessoas que nunca tocaram e querem realizar o sonho de
                       aprender música
                     </p>
@@ -79,36 +83,42 @@ const AboutSection = () => {
                 </div>
 
                 <div className="flex gap-4 items-start">
-                  <div className="p-3 bg-purple-100 rounded-lg">
-                    <GraduationCap className="w-6 h-6 text-purple-600" />
+                  <div className="p-3 bg-earthy-parchment rounded-lg">
+                    <GraduationCap className="w-6 h-6 text-earthy-liver" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Estudantes</h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold mb-2 text-earthy-bistre">
+                      Estudantes
+                    </h4>
+                    <p className="text-earthy-bistre">
                       Alunos que desejam aprofundar seus conhecimentos musicais
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-4 items-start">
-                  <div className="p-3 bg-purple-100 rounded-lg">
-                    <Heart className="w-6 h-6 text-purple-600" />
+                  <div className="p-3 bg-earthy-parchment rounded-lg">
+                    <Heart className="w-6 h-6 text-earthy-liver" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Entusiastas</h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold mb-2 text-earthy-bistre">
+                      Entusiastas
+                    </h4>
+                    <p className="text-earthy-bistre">
                       Amantes da música que querem desenvolver um novo hobby
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-4 items-start">
-                  <div className="p-3 bg-purple-100 rounded-lg">
-                    <Clock className="w-6 h-6 text-purple-600" />
+                  <div className="p-3 bg-earthy-parchment rounded-lg">
+                    <Clock className="w-6 h-6 text-earthy-liver" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Profissionais</h4>
-                    <p className="text-gray-600">
+                    <h4 className="font-semibold mb-2 text-earthy-bistre">
+                      Profissionais
+                    </h4>
+                    <p className="text-earthy-bistre">
                       Músicos que buscam aperfeiçoamento e novas técnicas
                     </p>
                   </div>
@@ -117,15 +127,15 @@ const AboutSection = () => {
             </div>
 
             {/* Call to Action */}
-            <div className="bg-purple-50 p-6 rounded-xl border border-purple-100">
-              <h4 className="font-semibold mb-2">
+            <div className="bg-earthy-parchment p-6 rounded-xl border border-earthy-copper/20">
+              <h4 className="font-semibold mb-2 text-earthy-bistre">
                 Comece sua jornada musical hoje!
               </h4>
-              <p className="text-gray-600 mb-4">
+              <p className="text-earthy-bistre mb-4">
                 Agende uma aula experimental e descubra como a música pode
                 transformar sua vida.
               </p>
-              <Button className="px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors duration-200">
+              <Button className="px-6 py-3 bg-earthy-liver text-earthy-parchment rounded-md hover:bg-earthy-copper transition-colors duration-200">
                 <a
                   href="https://wa.me/5521985536417"
                   target="_blank"
